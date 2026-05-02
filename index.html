@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitória Amaral | Economia & Supply Chain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400;600&display=swap");
+
+      :root {
+        --gold-primary: #d4af37;
+        --gold-dark: #b8860b;
+        --navy-blue: #0a192f;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8fafc;
+      }
+      
+      .serif-title {
+        font-family: "Cinzel", serif;
+      }
+
+      .gold-gradient {
+        background: linear-gradient(
+          135deg,
+          #d4af37 0%,
+          #f1c40f 50%,
+          #b8860b 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .btn-gold {
+        background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+        transition: all 0.3s ease;
+      }
+
+      .btn-gold:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+      }
+
+      .card-hover:hover {
+        border-color: var(--gold-primary);
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body class="text-slate-800">
+    <!-- Navegação Superior -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <h1 class="serif-title text-xl tracking-widest text-slate-900">
+          VITÓRIA <span class="text-[#D4AF37]">AMARAL</span>
+        </h1>
+        <div class="hidden md:flex space-x-10 text-xs font-semibold uppercase tracking-widest">
+          <a href="#home" class="hover:text-[#D4AF37] transition">Início</a>
+          <a href="#projetos" class="hover:text-[#D4AF37] transition">Projetos</a>
+          <a href="mailto:vitoriaamaral.br@gmail.com" class="text-[#D4AF37]">Contato</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-48 pb-32 bg-[#0A192F] text-white overflow-hidden relative">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="md:w-3/4">
+          <p class="text-[#D4AF37] font-bold tracking-[0.4em] mb-4 text-sm uppercase">
+            Graduanda em Economia & Estágiaria de Supply Chain
+          </p>
+          <h2 class="serif-title text-5xl md:text-7xl mb-8 leading-tight">
+            A inteligência de
+            <span class="gold-gradient">mercado</span> aplicada à gestão.
+          </h2>
+          <p class="text-slate-400 text-lg mb-10 max-w-2xl leading-relaxed">
+            Transformando as projeções do Boletim Focus e indicadores
+            macroeconômicos em decisões estratégicas para compras, estoques e
+            eficiência operacional.
+          </p>
+          <div class="flex flex-wrap gap-6">
+            <a
+              href="#projetos"
+              class="btn-gold text-navy-blue px-10 py-4 rounded-sm font-black text-xs tracking-widest uppercase"
+              >Explorar Projetos</a
+            >
+            <div class="flex items-center space-x-6 text-2xl">
+              
+              <!-- LINK DO LINKEDIN -->
+              <a
+                href="https://www.linkedin.com/in/vitoriaamaral-fnc/"
+                target="_blank"
+                class="text-slate-400 hover:text-[#D4AF37] transition"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              
+              <!-- LINK DO GITHUB -->
+              <a
+                href="https://github.com/vitoria-data"
+                target="_blank"
+                class="text-slate-400 hover:text-[#D4AF37] transition"
+                ><i class="fab fa-github"></i
+              ></a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Elemento Decorativo Dourado -->
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#D4AF37] opacity-5 rounded-full blur-3xl -mr-48 -mb-48"></div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-16">
+          <h3 class="serif-title text-3xl mb-2">Portfólio Técnico</h3>
+          <div class="w-24 h-1 bg-[#D4AF37]"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Projeto 1: Focus Python -->
+          <div class="bg-white border border-slate-200 p-8 card-hover transition-all duration-300 shadow-sm relative overflow-hidden group">
+            <div class="mb-6 text-[#D4AF37] text-3xl">
+              <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <h4 class="serif-title text-xl mb-4">Análise Focus & Compras</h4>
+            <p class="text-slate-500 text-sm mb-6 leading-relaxed">
+              Script Python que automatiza a leitura das projeções do Banco
+              Central para gerar alertas de compra e negociação de contratos de
+              facilities.
+            </p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
+                Python / Data Science
+              </span>
+              <a
+                href="https://github.com/vitoria-data"
+                target="_blank"
+                class="text-[#D4AF37] font-bold text-xs border-b border-[#D4AF37] hover:text-slate-900 transition"
+                >VER CÓDIGO</a
+              >
+            </div>
+          </div>
+
+          <!-- Projeto 2: Supply Chain Dashboard -->
+          <div class="bg-white border border-slate-200 p-8 card-hover transition-all duration-300 shadow-sm relative overflow-hidden group">
+            <div class="mb-6 text-[#D4AF37] text-3xl">
+              <i class="fas fa-truck-moving"></i>
+            </div>
+            <h4 class="serif-title text-xl mb-4">KPIs de Supply Chain</h4>
+            <p class="text-slate-500 text-sm mb-6 leading-relaxed">
+              Modelagem de indicadores de performance de fornecedores e lead
+              time, integrando dados operacionais com metas financeiras.
+            </p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
+                Excel / BI
+              </span>
+              <a
+                href="#"
+                class="text-[#D4AF37] font-bold text-xs border-b border-[#D4AF37] hover:text-slate-900 transition"
+                >VER PROJETO</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A192F] text-white py-20 border-t-2 border-[#D4AF37]">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-8 md:mb-0">
+          <h2 class="serif-title text-2xl tracking-widest">VITÓRIA AMARAL</h2>
+          <p class="text-slate-500 text-xs mt-2 uppercase tracking-widest">
+            Inovação através da Economia
+          </p>
+        </div>
+        <div class="flex space-x-8">
+          <a href="mailto:vitoriaamaral.br@gmail.com" class="hover:text-[#D4AF37]">
+            <i class="fas fa-envelope"></i>
+          </a>
+          
+          <!-- LINK DO LINKEDIN NO RODAPÉ -->
+          <a href="https://www.linkedin.com/in/vitoriaamaral-fnc/" target="_blank" class="hover:text-[#D4AF37]">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          
+          <!-- LINK DO GITHUB NO RODAPÉ -->
+          <a href="https://github.com/vitoria-data" target="_blank" class="hover:text-[#D4AF37]">
+            <i class="fab fa-github"></i>
+          </a>
+          
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
