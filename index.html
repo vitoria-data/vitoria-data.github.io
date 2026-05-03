@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vitória Amaral | Economia & Supply Chain</title>
+    <title>Vitória Amaral | Economia & Análise de Dados</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -93,6 +93,16 @@
         from { opacity: 0; transform: translateY(10px); }
         to { opacity: 1; transform: translateY(0); }
       }
+      
+      /* Animação do Modal */
+      .modal-content {
+        animation: slideUp 0.4s ease-out forwards;
+      }
+      
+      @keyframes slideUp {
+        from { opacity: 0; transform: translateY(50px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
     </style>
   </head>
   <body class="text-slate-800">
@@ -104,10 +114,11 @@
         </h1>
         <div class="hidden md:flex space-x-10 text-xs font-semibold uppercase tracking-widest">
           <a href="#home" class="hover:text-[#D4AF37] transition">Início</a>
-          <a href="#sobre" class="hover:text-[#D4AF37] transition">Sobre Mim</a>
-          <a href="#dashboard" class="hover:text-[#D4AF37] transition">Análise Real</a>
+          <a href="#sobre" class="hover:text-[#D4AF37] transition">Sobre</a>
+          <a href="#dashboard" class="hover:text-[#D4AF37] transition">Análises</a>
           <a href="#projetos" class="hover:text-[#D4AF37] transition">Projetos</a>
-          <a href="mailto:vitoriaamaral.br@gmail.com" class="text-[#D4AF37]">Contato</a>
+          <!-- Link de Contato Alterado para rolar até a seção -->
+          <a href="#contato" class="text-[#D4AF37] transition">Contato</a>
         </div>
       </div>
     </nav>
@@ -117,16 +128,15 @@
       <div class="max-w-7xl mx-auto px-6 relative z-10">
         <div class="md:w-3/4">
           <p class="text-[#D4AF37] font-bold tracking-[0.4em] mb-4 text-sm uppercase">
-            Graduanda em Economia & Estagiária de Supply Chain
+            Economia, Dados & Inteligência de Mercado
           </p>
-          <h2 class="serif-title text-5xl md:text-7xl mb-8 leading-tight">
-            A inteligência de
-            <span class="gold-gradient">mercado</span> aplicada à gestão.
+          <h2 class="serif-title text-4xl sm:text-5xl lg:text-6xl xl:text-7xl mb-8 leading-[1.15]">
+            Traduzindo cenários <br class="hidden md:block">
+            macroeconômicos em <br class="hidden md:block">
+            <span class="gold-gradient">estratégia.</span>
           </h2>
           <p class="text-slate-400 text-lg mb-10 max-w-2xl leading-relaxed">
-            Transformando as projeções do Boletim Focus e indicadores
-            macroeconômicos em decisões estratégicas para compras, estoques e
-            eficiência operacional.
+            Acompanhamento de mercados globais e construção de cenários. Transformo a análise de <strong>commodities, câmbio e inflação</strong> em inteligência preditiva para negociações e eficiência corporativa.
           </p>
           <div class="flex flex-wrap gap-6">
             <a href="#projetos" class="btn-gold text-navy-blue px-10 py-4 rounded-sm font-black text-xs tracking-widest uppercase">
@@ -151,42 +161,37 @@
       <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2">
           <h3 class="serif-title text-3xl mb-2 text-slate-900">
-            A intersecção entre Economia e Dados
+            Da Macroeconomia ao Impacto Real
           </h3>
           <div class="w-24 h-1 bg-[#D4AF37] mb-8"></div>
           <p class="text-slate-600 mb-6 leading-relaxed">
-            Como estudante de Economia, desenvolvi uma base analítica forte para
-            entender movimentos de mercado, inflação e câmbio. Porém, foi no
-            estágio em Supply Chain que percebi o valor prático desse conhecimento.
+            Como graduanda em Economia, a minha principal motivação é compreender a mecânica dos mercados. A minha atuação atual como ponto focal macroeconómico numa operação corporativa é o laboratório onde testo as minhas hipóteses na prática: analiso como as flutuações globais afetam custos, riscos e oportunidades de negócio.
           </p>
           <p class="text-slate-600 leading-relaxed">
-            Hoje, utilizo <strong class="text-[#0A192F]">Python e ferramentas de BI</strong>
-            para transformar dados brutos em inteligência. Meu foco é analisar o
-            comportamento de fornecedores, prever impactos macroeconômicos nos
-            custos da empresa e estruturar informações para tomadas de decisão ágeis.
+            O meu foco é utilizar <strong class="text-[#0A192F]">Python, análise de dados e BI</strong> para modelar cenários. Seja para antecipar movimentos de mercado, otimizar cadeias de abastecimento ou estruturar análises financeiras, o meu objetivo é fornecer a base analítica necessária para a tomada de decisão estratégica em qualquer área de negócio.
           </p>
         </div>
 
         <div class="md:w-1/2 grid grid-cols-2 gap-4 w-full">
           <div class="p-6 bg-slate-50 border border-slate-100 rounded-sm">
             <i class="fab fa-python text-[#D4AF37] text-3xl mb-3"></i>
-            <h4 class="font-bold text-sm text-slate-800 uppercase tracking-wider mb-1">Python & Dados</h4>
-            <p class="text-xs text-slate-500">Pandas, Matplotlib, Automações</p>
+            <h4 class="font-bold text-sm text-slate-800 uppercase tracking-wider mb-1">Dados & Automação</h4>
+            <p class="text-xs text-slate-500">Python, Pandas, Tratamento de Dados</p>
+          </div>
+          <div class="p-6 bg-slate-50 border border-slate-100 rounded-sm">
+            <i class="fas fa-globe-americas text-[#D4AF37] text-3xl mb-3"></i>
+            <h4 class="font-bold text-sm text-slate-800 uppercase tracking-wider mb-1">Cenários Macro</h4>
+            <p class="text-xs text-slate-500">Boletim Focus, Câmbio, Juros globais</p>
           </div>
           <div class="p-6 bg-slate-50 border border-slate-100 rounded-sm">
             <i class="fas fa-chart-line text-[#D4AF37] text-3xl mb-3"></i>
-            <h4 class="font-bold text-sm text-slate-800 uppercase tracking-wider mb-1">Macroeconomia</h4>
-            <p class="text-xs text-slate-500">Análise Focus, IPCA, Câmbio</p>
-          </div>
-          <div class="p-6 bg-slate-50 border border-slate-100 rounded-sm">
-            <i class="fas fa-boxes text-[#D4AF37] text-3xl mb-3"></i>
-            <h4 class="font-bold text-sm text-slate-800 uppercase tracking-wider mb-1">Supply Chain</h4>
-            <p class="text-xs text-slate-500">Gestão de Fornecedores, Custos</p>
+            <h4 class="font-bold text-sm text-slate-800 uppercase tracking-wider mb-1">Estratégia & Risco</h4>
+            <p class="text-xs text-slate-500">Previsibilidade, Modelação financeira</p>
           </div>
           <div class="p-6 bg-slate-50 border border-slate-100 rounded-sm">
             <i class="fas fa-chart-pie text-[#D4AF37] text-3xl mb-3"></i>
             <h4 class="font-bold text-sm text-slate-800 uppercase tracking-wider mb-1">Business Intel.</h4>
-            <p class="text-xs text-slate-500">Dashboards, Power BI, Looker</p>
+            <p class="text-xs text-slate-500">Tableau, Visualização de Dados</p>
           </div>
         </div>
       </div>
@@ -197,10 +202,10 @@
       <div class="max-w-7xl mx-auto px-6">
         <div class="mb-12 text-center">
           <h3 class="serif-title text-3xl mb-2 text-slate-900">
-            Análise Macro em Tempo Real
+            Painel Macroeconômico
           </h3>
           <p class="text-slate-500 text-sm">
-            Destaque: Simulador desenvolvido em Python (Streamlit)
+            Acompanhamento interativo de indicadores (Desenvolvido em Python/Streamlit)
           </p>
         </div>
 
@@ -211,7 +216,7 @@
             width="100%"
             height="100%"
             frameborder="0"
-            title="Dashboard de Exemplo Streamlit"
+            title="Painel Macro"
           >
           </iframe>
         </div>
@@ -227,130 +232,265 @@
             <div class="w-24 h-1 bg-[#D4AF37] mx-auto md:mx-0"></div>
           </div>
           
-          <!-- Menu das Abas -->
           <div class="mt-8 md:mt-0 flex space-x-6 border-b-2 border-slate-100 pb-[-2px] overflow-x-auto w-full md:w-auto">
             <button class="tab-btn active text-slate-500 pb-4 text-sm font-semibold tracking-wider uppercase whitespace-nowrap" onclick="openTab(event, 'tab-bi')">
-              <i class="fas fa-chart-pie mr-2"></i> Dashboards & BI
+              <i class="fas fa-chart-pie mr-2"></i> Tableau & BI
+            </button>
+            <button class="tab-btn text-slate-500 pb-4 text-sm font-semibold tracking-wider uppercase whitespace-nowrap" onclick="openTab(event, 'tab-commodities')">
+              <i class="fas fa-seedling mr-2"></i> Commodities & Insumos
             </button>
             <button class="tab-btn text-slate-500 pb-4 text-sm font-semibold tracking-wider uppercase whitespace-nowrap" onclick="openTab(event, 'tab-python')">
-              <i class="fab fa-python mr-2"></i> Python & Scripts
-            </button>
-            <button class="tab-btn text-slate-500 pb-4 text-sm font-semibold tracking-wider uppercase whitespace-nowrap" onclick="openTab(event, 'tab-excel')">
-              <i class="fas fa-file-excel mr-2"></i> Excel & Supply
+              <i class="fab fa-python mr-2"></i> Python & Modelos
             </button>
           </div>
         </div>
 
-        <!-- ABA 1: Business Intelligence & Dashboards -->
+        <!-- ABA 1: Business Intelligence & Dashboards (Tableau) -->
         <div id="tab-bi" class="tab-content active">
           <p class="text-slate-500 mb-8 max-w-2xl">
-            Visualizações interativas criadas para facilitar a tomada de decisão gerencial, cruzando dados internos de suprimentos com variáveis externas.
+            Visualizações interativas focadas na tradução de dados complexos de mercado em insights claros para a tomada de decisão.
           </p>
           
           <div class="bg-slate-50 border border-slate-200 rounded-lg p-2 md:p-6 shadow-sm">
             <div class="mb-4 px-4 pt-2 flex justify-between items-center">
-              <h4 class="serif-title text-xl text-slate-800">Painel Macro & Supply Chain</h4>
+              <h4 class="serif-title text-xl text-slate-800">Panorama de Mercado & Riscos</h4>
               <span class="text-[10px] font-bold text-white bg-[#0A192F] px-3 py-1 rounded-sm uppercase tracking-tighter">Tableau</span>
             </div>
-            <!-- Área do iFrame do Tableau -->
-            <div class="w-full relative rounded border border-slate-200 overflow-hidden bg-white" style="padding-top: 56.25%;"> <!-- Proporção 16:9 -->
-              <!-- COLE AQUI O IFRAME GERADO PELO TABLEAU PUBLIC -->
-              <!-- Exemplo de como fica o código: -->
+            <div class="w-full relative rounded border border-slate-200 overflow-hidden bg-white" style="padding-top: 56.25%;"> 
               <iframe 
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://public.tableau.com/views/SeuDashboard/SuaAba?:embed=y&:display_count=yes&:showVizHome=no" 
+                class="absolute top-0 left-0 w-full h-full z-10"
+                src="" 
                 frameborder="0" 
                 allowFullScreen="true"
                 title="Dashboard Tableau">
               </iframe>
-              
-              <!-- Div temporária apenas para demonstração visual enquanto não coloca o link real -->
-              <div class="absolute inset-0 flex flex-col items-center justify-center bg-slate-100 text-slate-400">
-                <i class="fas fa-chart-bar text-5xl mb-4 text-[#D4AF37]"></i>
-                <p>O seu Dashboard do Tableau aparecerá aqui.</p>
-                <p class="text-xs mt-2">Substitua o link no atributo 'src' do iframe.</p>
+              <div class="absolute inset-0 flex flex-col items-center justify-center bg-slate-100 text-slate-400 z-0 border-2 border-dashed border-slate-300 rounded-lg m-4">
+                <i class="fas fa-chart-bar text-5xl mb-4 text-[#D4AF37] opacity-50"></i>
+                <p class="font-bold text-slate-600 text-lg">Em breve: Dashboard Interativo</p>
+                <p class="text-sm mt-2 text-slate-500">Os dados estão sendo estruturados e o painel será publicado em breve.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- ABA 2: Python & Scripts -->
+        <!-- ABA 2: Commodities & Insumos -->
+        <div id="tab-commodities" class="tab-content">
+          <p class="text-slate-500 mb-8 max-w-2xl">
+            Ambiente dedicado ao monitoramento de preços de matérias-primas, insumos globais (Raw Ingredients) e análise de risco de fornecedores para apoio à mesa de operações.
+          </p>
+          
+          <div class="bg-slate-50 border border-slate-200 rounded-lg p-2 md:p-6 shadow-sm mb-8">
+            <div class="mb-4 px-4 pt-2 flex justify-between items-center">
+              <h4 class="serif-title text-xl text-slate-800">Tracker de Commodities & Fornecedores</h4>
+              <span class="text-[10px] font-bold text-white bg-[#0A192F] px-3 py-1 rounded-sm uppercase tracking-tighter">Mesa de Operações</span>
+            </div>
+            
+            <div class="w-full relative rounded border border-slate-200 overflow-hidden bg-white" style="padding-top: 56.25%;"> 
+              <iframe 
+                class="absolute top-0 left-0 w-full h-full z-10"
+                src="" 
+                frameborder="0" 
+                allowFullScreen="true"
+                title="Dashboard de Commodities">
+              </iframe>
+
+              <div class="absolute inset-0 flex flex-col items-center justify-center bg-slate-100 text-slate-400 z-0 border-2 border-dashed border-slate-300 rounded-lg m-4">
+                <i class="fas fa-globe-americas text-5xl mb-4 text-[#D4AF37] opacity-50"></i>
+                <p class="font-bold text-slate-600 text-lg">Em breve: Tracker de Commodities</p>
+                <p class="text-sm mt-2 text-center px-4 text-slate-500">Painel em fase de desenvolvimento e integração com a base de dados de fornecedores.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards explicativos -->
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 border border-slate-100 rounded shadow-sm">
+              <i class="fas fa-search-dollar text-[#D4AF37] text-2xl mb-3"></i>
+              <h5 class="font-bold text-slate-800 mb-2">Mapeamento de Preços</h5>
+              <p class="text-xs text-slate-600">Acompanhamento do histórico de preços de insumos-chave para identificar tendências de alta ou baixa antes das rodadas de compras.</p>
+            </div>
+            <div class="bg-white p-6 border border-slate-100 rounded shadow-sm">
+              <i class="fas fa-balance-scale-right text-[#D4AF37] text-2xl mb-3"></i>
+              <h5 class="font-bold text-slate-800 mb-2">Análise de Risco Cambial</h5>
+              <p class="text-xs text-slate-600">Cruzamento dos custos de matérias-primas importadas com a volatilidade do dólar, auxiliando na decisão de hedge ou antecipação de estoque.</p>
+            </div>
+            <div class="bg-white p-6 border border-slate-100 rounded shadow-sm">
+              <i class="fas fa-handshake text-[#D4AF37] text-2xl mb-3"></i>
+              <h5 class="font-bold text-slate-800 mb-2">Relacionamento & Negociação</h5>
+              <p class="text-xs text-slate-600">Geração de relatórios com dados de mercado isentos (benchmarks) para fundamentar negociações justas e estratégicas com fornecedores globais.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABA 3: Python & Scripts -->
         <div id="tab-python" class="tab-content">
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Projeto Python 1 -->
             <div class="bg-white border border-slate-200 p-8 card-hover transition-all duration-300 shadow-sm relative overflow-hidden flex flex-col h-full">
               <div class="mb-6 text-[#D4AF37] text-3xl">
-                <i class="fas fa-file-invoice-dollar"></i>
+                <i class="fas fa-cogs"></i>
               </div>
-              <h4 class="serif-title text-xl mb-4">Análise Focus & Compras</h4>
+              <h4 class="serif-title text-xl mb-4">Automação: Boletim Focus</h4>
               <p class="text-slate-500 text-sm mb-6 leading-relaxed flex-grow">
-                Script Python que automatiza a leitura das projeções do Banco Central para gerar alertas de compra e negociação de contratos de facilities.
+                Extração e organização das projeções macroeconômicas semanais do Banco Central.
               </p>
               <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100">
-                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Python / Automação</span>
-                <a href="https://github.com/vitoria-data/projeto-analise-focus" target="_blank" class="text-[#D4AF37] font-bold text-xs border-b border-[#D4AF37] hover:text-slate-900 transition">VER CÓDIGO</a>
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Python / Dados Abertos</span>
+                <button onclick="openModal('modal-focus')" class="text-[#D4AF37] font-bold text-xs border-b border-[#D4AF37] hover:text-slate-900 transition pb-1">
+                  VER ANÁLISE
+                </button>
               </div>
             </div>
             
-            <!-- Projeto Python 2 (Placeholder para o futuro) -->
+            <!-- Projeto Python 2 (Placeholder) -->
             <div class="bg-slate-50 border border-slate-200 border-dashed p-8 flex flex-col items-center justify-center text-center h-full opacity-70">
               <i class="fab fa-python text-slate-300 text-4xl mb-4"></i>
-              <h4 class="serif-title text-lg mb-2 text-slate-500">Próximo Projeto</h4>
-              <p class="text-slate-400 text-xs">Simulação de Risco Cambial em Construção...</p>
+              <h4 class="serif-title text-lg mb-2 text-slate-500">Próximo Modelo</h4>
+              <p class="text-slate-400 text-xs">Simulação de Cenários & Câmbio...</p>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- ABA 3: Excel & Supply Chain -->
-        <div id="tab-excel" class="tab-content">
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Projeto Excel 1 -->
-            <div class="bg-white border border-slate-200 p-8 card-hover transition-all duration-300 shadow-sm relative overflow-hidden flex flex-col h-full">
-              <div class="mb-6 text-[#D4AF37] text-3xl">
-                <i class="fas fa-truck-moving"></i>
-              </div>
-              <h4 class="serif-title text-xl mb-4">KPIs de Supply Chain</h4>
-              <p class="text-slate-500 text-sm mb-6 leading-relaxed flex-grow">
-                Modelagem no Excel de indicadores de performance de fornecedores e lead time, integrando dados operacionais com metas financeiras.
-              </p>
-              <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100">
-                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Excel Avançado</span>
-                <a href="#" class="text-[#D4AF37] font-bold text-xs border-b border-[#D4AF37] hover:text-slate-900 transition">VER PROJETO</a>
-              </div>
-            </div>
+    <!-- Seção Contato & Bio -->
+    <section id="contato" class="py-24 bg-slate-50 border-t border-slate-200 relative overflow-hidden">
+      <!-- Decoração de fundo -->
+      <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#D4AF37] to-[#0A192F]"></div>
+      
+      <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-16 items-center">
+        <!-- Esquerda: Bio Sintetizada -->
+        <div class="lg:w-1/2">
+          <h3 class="serif-title text-3xl mb-4 text-slate-900">Vamos conversar?</h3>
+          <p class="text-slate-600 mb-8 leading-relaxed text-lg">
+            Estou sempre aberta a discutir novos cenários econômicos, projetos de dados ou oportunidades estratégicas em inteligência de mercado.
+          </p>
+          
+          <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200">
+            <h4 class="font-bold text-sm text-slate-400 uppercase tracking-widest mb-4">Perfil Rápido</h4>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <i class="fas fa-graduation-cap text-[#D4AF37] mt-1 mr-4"></i>
+                <span class="text-slate-700">Graduanda em <strong>Ciências Econômicas</strong>.</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-briefcase text-[#D4AF37] mt-1 mr-4"></i>
+                <span class="text-slate-700">Experiência prática como <strong>ponto focal macroeconômico</strong> em suprimentos globais.</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-code text-[#D4AF37] mt-1 mr-4"></i>
+                <span class="text-slate-700">Forte atuação em <strong>Análise de Dados</strong> (Python, SQL) e <strong>Data Viz</strong> (Tableau).</span>
+              </li>
+            </ul>
           </div>
         </div>
 
+        <!-- Direita: Cartões de Contato -->
+        <div class="lg:w-1/2 w-full grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <a href="mailto:vitoriaamaral.br@gmail.com" class="group bg-white p-8 border border-slate-200 rounded-lg hover:border-[#D4AF37] hover:shadow-md transition text-center">
+            <div class="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#D4AF37]/10 transition">
+              <i class="fas fa-envelope text-2xl text-slate-400 group-hover:text-[#D4AF37] transition"></i>
+            </div>
+            <h4 class="serif-title text-lg mb-1 text-slate-800">E-mail</h4>
+            <p class="text-sm text-slate-500">vitoriaamaral.br@gmail.com</p>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/vitoriaamaral-fnc/" target="_blank" class="group bg-white p-8 border border-slate-200 rounded-lg hover:border-[#D4AF37] hover:shadow-md transition text-center">
+            <div class="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#D4AF37]/10 transition">
+              <i class="fab fa-linkedin text-2xl text-slate-400 group-hover:text-[#D4AF37] transition"></i>
+            </div>
+            <h4 class="serif-title text-lg mb-1 text-slate-800">LinkedIn</h4>
+            <p class="text-sm text-slate-500">Conecte-se comigo</p>
+          </a>
+          
+          <a href="https://github.com/vitoria-data" target="_blank" class="group bg-white p-8 border border-slate-200 rounded-lg hover:border-[#D4AF37] hover:shadow-md transition text-center sm:col-span-2">
+            <div class="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#D4AF37]/10 transition">
+              <i class="fab fa-github text-2xl text-slate-400 group-hover:text-[#D4AF37] transition"></i>
+            </div>
+            <h4 class="serif-title text-lg mb-1 text-slate-800">GitHub</h4>
+            <p class="text-sm text-slate-500">Veja meus códigos e repositórios</p>
+          </a>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#0A192F] text-white py-20 border-t-2 border-[#D4AF37]">
-      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-8 md:mb-0">
-          <h2 class="serif-title text-2xl tracking-widest">VITÓRIA AMARAL</h2>
-          <p class="text-slate-500 text-xs mt-2 uppercase tracking-widest">
-            Inovação através da Economia e Dados
-          </p>
-        </div>
-        <div class="flex space-x-8">
-          <a href="mailto:vitoriaamaral.br@gmail.com" class="hover:text-[#D4AF37] text-xl transition">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/vitoriaamaral-fnc/" target="_blank" class="hover:text-[#D4AF37] text-xl transition">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/vitoria-data" target="_blank" class="hover:text-[#D4AF37] text-xl transition">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
+    <footer class="bg-[#0A192F] text-white py-12 border-t border-[#112240]">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="serif-title text-xl tracking-widest mb-4">VITÓRIA AMARAL</h2>
+        <p class="text-slate-500 text-xs uppercase tracking-widest">
+          Economia & Inteligência de Dados © 2026
+        </p>
       </div>
     </footer>
 
-    <!-- Script para funcionamento das Abas -->
+    <!-- ========================================== -->
+    <!-- MODAIS DE PROJETOS (Janelas Sobrepostas)   -->
+    <!-- ========================================== -->
+
+    <!-- Modal: Focus -->
+    <div id="modal-focus" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-slate-900/80 backdrop-blur-sm px-4">
+      <div class="modal-content bg-white rounded-xl w-full max-w-4xl max-h-[90vh] overflow-y-auto relative border border-[#D4AF37]/30 shadow-2xl">
+        
+        <!-- Botão Fechar -->
+        <button onclick="closeModal('modal-focus')" class="absolute top-6 right-6 text-slate-400 hover:text-slate-900 transition z-10 bg-white rounded-full p-1">
+          <i class="fas fa-times text-2xl"></i>
+        </button>
+        
+        <!-- Cabeçalho do Modal -->
+        <div class="p-8 md:p-12 border-b border-slate-100">
+          <span class="text-[10px] font-bold text-[#D4AF37] uppercase tracking-widest">Estudo de Caso</span>
+          <h3 class="serif-title text-3xl md:text-4xl text-slate-900 mt-2 mb-4">Automação e Análise do Boletim Focus</h3>
+          <p class="text-slate-600 text-lg">Como estruturei um pipeline de dados em Python para antecipar movimentos de juros e inflação, auxiliando na mitigação de risco.</p>
+        </div>
+
+        <!-- Corpo do Modal -->
+        <div class="p-8 md:p-12 bg-slate-50">
+          
+          <!-- Imagem / Dashboard Sintetizado -->
+          <div class="w-full bg-slate-100 rounded-lg border-2 border-dashed border-slate-300 overflow-hidden mb-10 flex items-center justify-center relative" style="aspect-ratio: 16/9;">
+            <div class="text-center p-6">
+              <i class="fas fa-chart-area text-5xl mb-4 text-[#D4AF37] opacity-50"></i>
+              <p class="font-bold text-slate-600 text-lg">Em breve: Análise Visual do Focus</p>
+              <p class="text-sm mt-2 text-slate-500">O gráfico com os resultados da extração será publicado em breve.</p>
+            </div>
+          </div>
+
+          <!-- Explicação dos Dados -->
+          <div class="grid md:grid-cols-3 gap-8 mb-10">
+            <div class="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
+              <i class="fas fa-bullseye text-[#D4AF37] text-xl mb-3"></i>
+              <h4 class="font-bold text-slate-800 mb-2">O Problema</h4>
+              <p class="text-sm text-slate-600">A coleta manual de indicadores do Banco Central consumia tempo e abria margem para erros humanos na projeção de custos.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
+              <i class="fas fa-code text-[#D4AF37] text-xl mb-3"></i>
+              <h4 class="font-bold text-slate-800 mb-2">A Solução</h4>
+              <p class="text-sm text-slate-600">Script em Python que consulta a API do SGS (Bacen), limpa os dados, estrutura num DataFrame e plota as tendências automaticamente.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
+              <i class="fas fa-chart-line text-[#D4AF37] text-xl mb-3"></i>
+              <h4 class="font-bold text-slate-800 mb-2">O Impacto</h4>
+              <p class="text-sm text-slate-600">Previsibilidade para a tomada de decisão corporativa, permitindo negociações de longo prazo antes de altas da inflação.</p>
+            </div>
+          </div>
+          
+          <!-- Botão do GitHub (Oculto temporariamente)
+          <div class="text-center pt-8 border-t border-slate-200">
+            <p class="text-sm text-slate-500 mb-4">Interessado nos bastidores da extração de dados?</p>
+            <a href="https://github.com/vitoria-data/projeto-analise-focus" target="_blank" class="inline-flex items-center justify-center bg-[#0A192F] text-white px-8 py-3 rounded text-sm font-bold tracking-wider hover:bg-slate-800 transition">
+              <i class="fab fa-github mr-3 text-lg"></i> ACESSAR CÓDIGO NO GITHUB
+            </a>
+          </div>
+          -->
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Script para funcionamento das Abas e Modais -->
     <script>
       function openTab(evt, tabName) {
-        // Esconde todo o conteúdo das abas
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tab-content");
         for (i = 0; i < tabcontent.length; i++) {
@@ -358,7 +498,6 @@
           tabcontent[i].classList.remove("active");
         }
 
-        // Remove a classe "active" dos botões (retira o traço dourado)
         tablinks = document.getElementsByClassName("tab-btn");
         for (i = 0; i < tablinks.length; i++) {
           tablinks[i].classList.remove("active");
@@ -366,10 +505,8 @@
           tablinks[i].classList.add("text-slate-500");
         }
 
-        // Mostra a aba atual e adiciona a classe "active" ao botão clicado
         var currentTab = document.getElementById(tabName);
         currentTab.style.display = "block";
-        // Pequeno atraso para a animação CSS rodar suavemente
         setTimeout(() => {
           currentTab.classList.add("active");
         }, 10);
@@ -377,6 +514,25 @@
         evt.currentTarget.classList.add("active");
         evt.currentTarget.classList.remove("text-slate-500");
         evt.currentTarget.classList.add("text-slate-900");
+      }
+
+      function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+
+      window.onclick = function(event) {
+        if (event.target.classList.contains('fixed')) {
+          event.target.classList.add('hidden');
+          document.body.style.overflow = 'auto';
+        }
       }
     </script>
   </body>
